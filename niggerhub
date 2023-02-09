@@ -1,0 +1,84 @@
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+if key == "v" then
+getgenv().Sky = true 
+getgenv().SkyAmount = 900 
+getgenv().Sky = true -- if the sky aa is on or off
+game:GetService("RunService").heartbeat:Connect(function()
+    if getgenv().Sky ~= false then 
+    local vel = game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity
+    game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(0,      getgenv().SkyAmount,0) 
+    game:GetService("RunService").RenderStepped:Wait()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = vel
+    end
+end)
+ end
+end)
+ 
+ 
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+ if key == "q" then
+    getgenv().Sky = false 
+ end
+end)
+ 
+local function callback(text)
+    if text == "Yes" then
+    print("User said yes")
+    elseif text == "No" then
+    print("User said no")
+    end
+end
+ 
+local bindableFunction= Instance.new("BindableFunction")
+ 
+game.StarterGui:SetCore("SendNotification", {
+    Title = "nigger hub";
+    Text = "black people on top";
+    Icon = "among us";
+    Duration = 5;
+    callbakc = bindableFunction;
+    Button1 = "cock";
+})
+ 
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+ if key == "q" then
+local function callback(text)
+    if text == "Yes" then
+    print("User said yes")
+    elseif text == "No" then
+    print("User said no")
+    end
+end    
+ 
+local bindableFunction= Instance.new("BindableFunction")
+ 
+game.StarterGui:SetCore("SendNotification", {
+    Title = "lol nigga";
+    Text = " anti sex off ";
+    Icon = "blank";
+    Duration = 0.5;
+    callbakc = bindableFunction;
+})
+ end
+end)
+ 
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+ if key == "v" then
+local function callback(text)
+    if text == "Yes" then
+    print("User said yes")
+    elseif text == "No" then
+    print("User said no")
+    end
+end    
+ 
+local bindableFunction= Instance.new("BindableFunction")
+ 
+game.StarterGui:SetCore("SendNotification", {
+    Title = "lmao nigga";
+    Text = " anti sex on ";
+    Duration = 0.5;
+    callbakc = bindableFunction;
+})
+ end
+end)
